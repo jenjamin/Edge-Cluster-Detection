@@ -1,10 +1,8 @@
 # Script to identifying edge clusters in APT datasets
 # Required input of POS File, Cluster Range F
 # Find clusters on the edge of an alpha hull
-#   Input: pos file and cluster stats file path
+#   Input: pos file, indexed cluster pos file, cluster pos file and cluster stats file path
 #   Cluster stats may be exported from IVAS (csv)
-#   AtomicDensity = Atomic density of material (atoms/nm3)
-#   DetectionEfficiency = Detection efficiency of leap used
 #   SamplingFraction = How much one would like to sample the POS file by
 #   Returns a list of which cluster IDs are deemed to be on the edge of the dataile, Cluster Analysis CSV
 # Written by Ben Jenkins and Andy London
