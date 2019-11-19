@@ -143,9 +143,9 @@ findEdgeClustersConvex <- function (posFileName,
   }
   
   EdgeClusterPos <- ClusterPosFile %>% slice(IonsInEdgeClusters)
-  NonEdgeClusterPos <- setdiff(ClusterPosFile,EdgeClusterPos)
-  writeposR(EdgeClusterPos, "Edge Clusters Ranged.pos")
-  writeposR(setdiff(ClusterPosFile,EdgeClusterPos), "Non Edge Clusters Ranged.pos")
+  NonEdgeClusterPos <- setdiff(ClusterPosFile,EdgeClusterPos)  
+  writeposR(EdgeClusterPos, paste0(gsub(".pos"," Edge Clusters Ranged.pos",clusterPosFile)))
+  writeposR(setdiff(ClusterPosFile,EdgeClusterPos), paste0(gsub(".pos"," Non Edge Clusters Ranged.pos",clusterPosFile)))
 }
 
 #### Parameters For Calculating Alpha Value####
